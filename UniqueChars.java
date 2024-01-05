@@ -11,7 +11,18 @@ public class UniqueChars {
      * unless they are space characters.
      */
     public static String uniqueChars(String s) {
-        // Replace the following statement with your code
-        return null;
+		int length = s.length(); 
+		String currentDigit ; 
+		String sFinal = "" ;
+        for (int i = 0 ; i < length ; i++){
+			currentDigit = String.valueOf(s.charAt(i));
+			if (sFinal.indexOf(currentDigit) == -1 ){
+				sFinal = sFinal + currentDigit ;
+			}
+			else {
+				sFinal = sFinal ; 
+			}
+		}
+        return sFinal;
     }
 }
