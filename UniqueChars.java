@@ -16,7 +16,7 @@ public class UniqueChars {
 		String sFinal = "" ;
         for (int i = 0 ; i < length ; i++){
 			currentDigit = String.valueOf(s.charAt(i));
-			if (sFinal.indexOf(currentDigit) == -1 ){
+			if (sFinal.indexOf(currentDigit) == -1 && currentDigit != " " ){
 				sFinal = sFinal + currentDigit ;
 			}
 			else {
